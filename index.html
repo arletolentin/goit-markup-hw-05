@@ -18,10 +18,10 @@
     <header class="head">
         <div class="nav-container">
             <nav class="nav">
-                <a class="nav-logo" href="https://arletolentin.github.io/goit-markup-hw-04/" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+                <a class="nav-logo" href="https://arletolentin.github.io/goit-markup-hw-05/" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-anchor" href="https://arletolentin.github.io/goit-markup-hw-04/">Studio</a></li>
-                    <li class="nav-item"><a class="nav-anchor" href="https://arletolentin.github.io/goit-markup-hw-04/portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-anchor" href="https://arletolentin.github.io/goit-markup-hw-05/">Studio</a></li>
+                    <li class="nav-item"><a class="nav-anchor" href="https://arletolentin.github.io/goit-markup-hw-05/portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-anchor" href="#">Contacts</a></li>
                 </ul>
                 <address class="nav-address">
@@ -36,7 +36,7 @@
         <section class="hero">
             <div class="hero-container">
                 <h1 class="hero-heading">Effective Solutions <br> for Your Business</h1>
-                <button type="button" class="hero-button">Order Service</button>
+                <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="features">
@@ -304,7 +304,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div>
-                <a href="https://arletolentin.github.io/goit-markup-hw-04/"><span class="web-foot">Web</span><span class="studio-foot">Studio</span></a>
+                <a href="https://arletolentin.github.io/goit-markup-hw-05/"><span class="web-foot">Web</span><span class="studio-foot">Studio</span></a>
                 <p class="footer-paragraph">Increase the flow of customers and<br>
                 sales for your business with digital<br>
                 marketing & growth solutions.</p>
@@ -345,10 +345,15 @@
             </div>
         </div>    
     </footer>
-    <div class="modal" data-modal>
+    <div class="modal is-hidden" data-modal>
         <div class="modal-content">
-            <button class="modal-close" data-modal-close></button>
+            <button class="modal-close" data-modal-close>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#close-modal">
+                  </svg>
+            </button>
         </div>
     </div>
+    <script src="js/modal.js"></script>
 </body>
 </html>
