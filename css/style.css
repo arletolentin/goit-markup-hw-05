@@ -79,6 +79,7 @@ button {
   flex-shrink: 0;
   text-decoration: none;
   padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
 }
 .nav {
   display: inline-flex;
@@ -173,6 +174,7 @@ bottom: -25px;
   align-items: center;
   padding-bottom: 188px;
   padding-top: 188px;
+  background-color: var(--navyblue);
 }
 .hero-heading {
   color: var(--white);
@@ -198,7 +200,8 @@ bottom: -25px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   padding: 16px 32px;
-  margin-left: 480px;
+  display: block;
+  margin: 0 auto;
 }
 .portfolio-button {
   justify-content: center;
@@ -228,7 +231,7 @@ bottom: -25px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   border-radius: 4px;
-  border: 1px solid   var(--cornflower, #E7E9FC);
+  border: 1px solid   var(--cornflower);
   background: var(--cloud);
   padding: 12px 24px;
   align-items: center;
@@ -274,8 +277,8 @@ bottom: -25px;
   transform: translate(0);
 }
 .portfolio-item:hover {
-  border: 1px solid var(--CLOUD);
-  background: var(--WHITE);
+  border: 1px solid var(--cloud);
+  background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
   .portfolio-services-list {
@@ -334,7 +337,7 @@ bottom: -25px;
 .features {
   flex-shrink: 0;
   display: flex;
-  background: #FFF;
+  background: var(--white);
   justify-content: center;
   padding: 120px 0;
 }
@@ -358,7 +361,7 @@ bottom: -25px;
   padding: 24px 100px;
 }
 .services {
-  background: #FFF;
+  background: var(--white);
   padding-bottom: 120px;
 }
 .services-title {
@@ -425,7 +428,7 @@ bottom: -25px;
   display: inline-flex;
   width: 40px;
   height: 40px;
-  background: #4d5ae5;
+  background: var(--iris);
   border-radius: 20px;
   justify-content: center;
   align-items: center;
@@ -448,7 +451,7 @@ bottom: -25px;
   text-align: center;
 }
 .customer-title {
-  color: var(--NAVY-BLUE);
+  color: var(--navyblue);
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
@@ -538,7 +541,7 @@ bottom: -25px;
   display: inline-flex;
   width: 40px;
   height: 40px;
-  background: #4d5ae5;
+  background: var(--iris);
   border-radius: 20px;
   justify-content: center;
   align-items: center;
