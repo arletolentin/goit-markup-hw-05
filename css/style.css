@@ -474,8 +474,10 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 72px;
 }
 .customer-icon {
+  width: 104px;
+  height: 56px;
   fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   .customer-list {
   display: inline-block;
@@ -502,7 +504,7 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .customer-item:hover {
   border-color: var(--ocean);
 }
-.customer-icon-link:hover .customer-icon {
+.customer-item:hover .customer-icon-link {
   color: var(--ocean);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -559,7 +561,9 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons-list {
   display: flex;
@@ -592,7 +596,6 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-
 }
 .modal-content {
   position: relative;
@@ -619,9 +622,17 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   right: 24px;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(0, 0, 0, .10)
+  border: 1px solid rgba(0, 0, 0, .10);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color ;
 }
 .modal-icon {
   height: 8px;
   width: 8px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover {
+  border-color: var(--ocean);
+  background-color: var(--ocean);
+  color: var(--cloud);
 }
